@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>jqueryfirstexample-events</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<style>
+div
+{
+	border:1px solid red;
+	margin-bottom:10px;
+}
+div a 
+{
+	border:1px solid red;
+}
+.active{
+	background:red;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$(".test1 a").click(function()
+		{
+			$(this).toggleClass("active");
+			$(this).next(".para").slideDown();
+			$(this).parent(".test1").nextAll(".test1").find(".para").slideUp();
+			$(this).parent(".test1").prevAll(".test1").find(".para").slideUp();
+		});
+	});
+</script>
+</head>
+<body>
+<div class="test1">
+	<a href="javascript:;">asdfgg</a>
+	<p class="para" style="display:none;">This is the answer for the first question</p>
+</div>
+<div class="test1">
+	<a href="javascript:;">asdfgg</a>
+	<p class="para" style="display:none;">This is the answer for the first question</p>
+</div>
+<div class="test1">
+	<a href="javascript:;">asdfgg</a>
+	<p class="para" style="display:none;">This is the answer for the first question</p>
+</div>
+<div class="test1">
+	<a href="javascript:;">asdfgg</a>
+	<p class="para" style="display:none;">This is the answer for the first question</p>
+</div>
+</body>
+</html>

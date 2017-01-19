@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('.tab a').click(function()
+		{
+			var getRel = $(this).attr('rel');
+			$('.tab-show').hide();
+			$(this).addClass('active').siblings().removeClass('active');
+			$('#tab'+getRel).fadeIn();
+			console.log(getRel);
+		});
+	});
+</script>
+ </head>
+ <body>
+ <div class="tab">
+	<a href="javascript:;" class="active" rel="1">featured</a>
+	<a href="javascript:;" rel="2">core</a>
+	<a href="javascript:;" rel="3">jquery</a>
+	<a href="javascript:;" rel="4">classic</a>
+ </div>
+<div class="tab-show" style="display:block" id="tab1">
+	Tab -1
+</div>
+<div class="tab-show" style="display:none" id="tab2">
+	Tab -2
+</div>
+<div class="tab-show" style="display:none" id="tab3">
+	Tab -3
+</div>
+<div class="tab-show" style="display:none" id="tab4">
+	Tab -4
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.output{
+	padding:20px 40px;
+	color:#fff;
+	display:inline-block;
+	background-color:black;
+}
+h1,.input1,.input2,.main{
+	text-align:center;
+}
+a{
+display:inline-block;
+padding:20px 30px;
+text-decoration:none;
+margin:20px 0px;
+background-color:skyblue;
+}
+

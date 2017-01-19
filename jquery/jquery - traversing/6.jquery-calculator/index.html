@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$(".custom-add").click(function()
+		{
+			var a=$(".input1").val();
+			var b=$(".input2").val();
+			var c=parseInt(a)+parseInt(b);
+			$(".output").text(c);
+			
+		});
+		$(".custom-sub").click(function()
+		{
+			var a=$(".input1").val();
+			var b=$(".input2").val();
+			var c=parseInt(a)-parseInt(b);
+			$(".output").text(c);
+			
+		});
+		$(".custom-mul").click(function()
+		{
+			var a=$(".input1").val();
+			var b=$(".input2").val();
+			var c=parseInt(a)*parseInt(b);
+			$(".output").text(c);
+			
+			
+		});
+		$(".custom-div").click(function()
+		{
+			var a=$(".input1").val();
+			var b=$(".input2").val();
+			var c=parseInt(a)/parseInt(b);
+			$(".output").text(c);
+			
+			
+		});
+	});
+</script>
+ </head>
+ <body>
+ <div class="main">
+	<h1>Calculator</h1>
+    <input type="email" class="input1">
+    <input type="email" class="input2">
+	<div class="anchor">
+		<a href="javascript:;" class="custom-add">Add</a>
+		<a href="javascript:;" class="custom-sub">Sub</a>
+		<a href="javascript:;" class="custom-mul">Mul</a>
+		<a href="javascript:;" class="custom-div">Div</a>
+	</div>
+	<span class="output"></span>
+</div>
+ </body>
+</html>

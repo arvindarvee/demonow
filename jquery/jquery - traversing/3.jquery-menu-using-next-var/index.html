@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>jqueryfirstexample-events</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<style>
+div
+{
+	border:1px solid red;
+	margin-bottom:10px;
+}
+div a 
+{
+	border:1px solid red;
+	background:none;
+}
+.menu{
+	background:#fff;
+	color:black;
+	padding:20px;
+	display:inline-block;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$(".anchor a").click(function()
+		{
+			$(this).addClass("menu").siblings().removeClass();
+			var deepak=$(this).next().text();
+			if(deepak=='')
+			{
+				alert("empty");
+			}
+			else
+			{
+				alert(deepak);
+			}
+		});
+	});
+</script>
+</head>
+<body>
+<div class="anchor">
+	<a href="javascript:;" class="">deepak</a>
+	<a href="javascript:;" class="">aravind</a>
+	<a href="javascript:;" class="">jegan</a>
+	<a href="javascript:;" class="">yoga</a>
+</div>
+</body>
+</html>

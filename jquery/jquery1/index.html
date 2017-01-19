@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>jquerytraversing-this-nextall-hide</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<style>
+div
+{
+	border:1px solid red;
+	margin-bottom:10px;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$(".test1 a").click(function()
+		{
+			$(this).parent(".test1").nextAll(".test1").hide();
+		});
+	});
+</script>
+</head>
+<body>
+<div class="test1">
+	<a href="#">asdfgg</a>
+</div>
+<div class="test1">
+	<a href="#">asdfgg</a>
+</div>
+<div class="test1">
+	<a href="#">asdfgg</a>
+</div>
+<div class="test1">
+	<a href="#">asdfgg</a>
+</div>
+</body>
+</html>
